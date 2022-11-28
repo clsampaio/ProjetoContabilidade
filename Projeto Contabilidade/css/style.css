@@ -1,0 +1,150 @@
+:root{
+    --white:#FFF;
+    --black:#000;
+
+    --dark-blue-800:#212733;
+    --dark-blue-600:#1f242e;
+    --dark-blue-500:#2c303b;
+    --dark-blue-400:#292d39;
+    --dark-blue-300:#2b3240;
+
+    --blue-400:#44557a;
+
+    --gray-500:#4e4e4c;
+    --gray-400:#ccc5bb;
+    --gray-300:#cdc6bc;
+    --gray-200:#ebe6de;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Início do header */
+.header{
+    background-color: var(--dark-blue-800);
+}
+
+.container{
+    /* border: 1px solid white; */
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu-item{
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu-item:houver{
+    background-color: var(--dark-blue-300);
+}
+
+.menu-link{
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding: 1.2rem;
+}
+
+.menu-img{
+    background-color: var(--gray-500);
+    padding: .5rem;
+    border-radius: 50%;
+    display: flex;
+}
+
+.menu-info p{
+    font-size: bold;
+}
+.menu-info span{
+    font-size: .9rem;
+}
+
+.menu-item button{
+    padding: .5rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+}
+/* Fim do header */
+
+/* Início da Navegação */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .6rem;
+    gap:0 1rem;
+}
+
+/* Navbar Logo */
+.navbar-brand a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.navbar-brand p{
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar-brand span{
+    margin-top: 0;
+    font-size: .9rem;
+}
+/* Navabar Logo */
+
+
+.nav-list{
+    margin-left: auto;
+}
+
+.navbar-nav{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-item{
+    text-transform: uppercase;
+}
+
+.nav-link{
+    color: var(--dark-blue-300);
+    text-decoration: none;
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+.nav-button button{
+    border: none;
+    background-color: var(--dark-blue-300);
+    border-radius: 8px;
+    color: var(--gray-200);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: .6rem 1rem;
+}
+/* Fim da Navegação */
+
+
+.hero{
+    background-image: url(../assets/img/cytonn-photography-n95VMLxqM2I-unsplash.png);
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center, right;
+}
